@@ -1,6 +1,6 @@
 (function( $ ){
 
-	$.fn.shutterAccordion = function ( options ) {
+	$.fn.pixiefyAccordion = function ( options ) {
 
 	  var settings = $.extend({
 	      openDefault: false,
@@ -39,7 +39,7 @@
 	  return this;
 	};
 
-	$.fn.shutterTabs = function ( options ) {
+	$.fn.pixiefyTabs = function ( options ) {
 
 	  var settings = $.extend({
 	      activeClass : "current",
