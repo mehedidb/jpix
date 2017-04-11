@@ -31,7 +31,8 @@
 	        } else {
 	            $self.parent().parent().find('.'+settings.activeContent).removeClass(settings.activeContent).slideUp(350);
 	            $self.next().toggleClass(settings.activeContent);
-	            $self.toggleClass(settings.activeClass);
+	            $self.parent().parent().find('.'+settings.activeClass).removeClass(settings.activeClass);
+	            $self.addClass(settings.activeClass);
 	            $self.next().slideToggle(350);
 	        }
 
