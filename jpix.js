@@ -26,10 +26,12 @@
 
 	        if ($self.next().hasClass(settings.activeContent)) {
 	            $self.next().removeClass(settings.activeContent);
+	            $self.removeClass(settings.activeClass);
 	            $self.next().slideUp(350);
 	        } else {
 	            $self.parent().parent().find('.'+settings.activeContent).removeClass(settings.activeContent).slideUp(350);
 	            $self.next().toggleClass(settings.activeContent);
+	            $self.toggleClass(settings.activeClass);
 	            $self.next().slideToggle(350);
 	        }
 
